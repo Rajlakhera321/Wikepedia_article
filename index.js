@@ -32,6 +32,7 @@ app.post('/', async (req,res) => {
             text: message,
             parse_mode: 'Markdown'
         });
+        
         return res.status(200).json({message: "Message sent successfully"});
     } catch (error) {
         console.log(error);
